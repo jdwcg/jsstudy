@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ex</title>
+   </head>
+   <body>
+      <div class="foo"></div>
+      <script>
+         let foo = document.querySelector(".foo")
+         var num = 800
+         setInterval(() => {
+            if (num >= 0) {
+               foo.textContent = num--
+               console.log((foo.textContent = num--))
+            } else if (num <= 0) {
+               foo.textContent = "완료!"
+               console.log((foo.textContent = "완료!"))
+            }
+         }, 1000)
+      </script>
+   </body>
+</html>
